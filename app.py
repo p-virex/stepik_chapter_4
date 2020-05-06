@@ -115,6 +115,16 @@ def render_index():
                            teachers=teachers_list[:6])
 
 
+@app.errorhandler(500)
+def render_server_error(error):
+    return "Что-то не так, но мы все починим"
+
+
+@app.errorhandler(404)
+def render_not_found(error):
+    return "Ничего не нашлось! Вот неудача, отправляйтесь на главную!"
+
+
 @app.route('/all/')
 def render_all():
     """

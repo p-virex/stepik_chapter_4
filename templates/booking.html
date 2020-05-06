@@ -19,9 +19,9 @@
               </div>
 
             <label class="mb-1 mt-2" for="clientName">Вас зовут</label>
-            <input class="form-control" name="name" value="">
+            {{ form.name(class="form-control") }}
             <label class="mb-1 mt-2" for="clientPhone">Ваш телефон</label>
-            <input class="form-control"  name="phone" value="">
+            {{ form.phone(class="form-control") }}
             <input type="submit" class="btn btn-primary btn-block mt-4" value="Записаться на пробный урок">
 
           </div>
